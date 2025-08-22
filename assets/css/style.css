@@ -3,13 +3,14 @@ body, html {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+ul { list-style: none; padding-left: 5px; }
 .sidebar { 
     list-style: none; 
     padding-left: 5px;
     border-right: solid 1px #cdcdcd;
 }
 a { 
-    color:blue; text-decoration: none;
+    color:blue; text-decoration:none ;
 }
 .bar {
     background-color: #f9f9fb;
@@ -28,11 +29,18 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.footer {
-    min-height: 100px;
-    border-top: solid 1px #cdcdcd;
+
+footer {
     text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    grid-column: 1 / -1;
+    color: rgb(0, 0, 0);
+    border-top: 2px solid #ccc; /* Linha divisória */
+    border-radius: 10px;
+    background: #ffffff;
 }
+
 .anchors {
     list-style-type: none;
     border-left: solid 1px #cdcdcd;
@@ -46,3 +54,48 @@ figure {
 .logo {
     padding-left: 15px;
 }
+.video-container {
+    display: flex; justify-content: center;
+}
+
+header {
+    text-align:center ;
+    padding: 3rem;
+    background: linear-gradient(135deg, #829aea, #b595dc);
+    color: white;
+    border-radius: 2px;
+    /* 1 / -1 faz o elemento se estender por TODAS as colunas do grid, responsividade = */
+    grid-column: 1 / -1;
+        }
+
+.card {
+    background: linear-gradient(to bottom right, #f0f4ff, #e6e9ff);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #6e8efb;
+}        
+
+         .improved table {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .improved th, .improved td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        
+        .improved th {
+            background-color: #5bb0e9;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .improved tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+/*         
+        .improved tr:hover {
+            background-color: #e6f7ff;
+        } */
