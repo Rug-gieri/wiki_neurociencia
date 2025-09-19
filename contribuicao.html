@@ -9,16 +9,85 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/w.ico">
 </head>
 <body>
-    falar sobre nosso serviço pra comunidade 
+    <header>
+        <div class="logo">
+            <abrr title="wiki-leaks da Neurociência"><img src="assets/images/logo.png" alt="logo em formato de W estilo Wikipedia" width="100"/></abrr>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#introducao">mais sobre o assunto</a></li>
+                <li><a href="index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+ 
+    <main class="form-body">
+    <div class="container">
+        <h2>Formulário de Cadastro</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone">
+            </div>
+            
+            <div class="form-group">
+                <label>Gênero</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+                    <label><input type="radio" name="genero" value="outro"> Outro</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="nascimento">Data de nascimento</label>
+                <input type="text" id="nascimento" name="nascimento" placeholder="DD/MM/AAAA">
+            </div>
+            
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                    <option value="">Selecione um estado</option>
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espírito Santo</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" name="termos" value="aceito" required>
+                    Aceito os termos e condições
+                </label>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</main>
+    <footer>
+    <p><strong>Sobre nosso site - <a href="https://atelie.software/">clique para saber mais</a></strong><br>
+    <p><strong>Avenida Michigan, 720 – Chicago, IL – 60605, Estados Unidos</strong><br>
+    <p><strong>Telefone: (69) 2181-1342 - CEP: 76804-085</strong>
+    <p><strong>Todos direitos reservados - 2025©</strong>
+        </footer>
 
-    formulário para contribuição 
-
-    nome
-
-    email
-
-    Assunto 
-
-    Texto 
 </body>
 </html>
